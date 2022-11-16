@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	::selection {
+		@apply bg-red-900 text-white;
+	}
+
+	#__next {
+		@apply font-lora flex min-h-screen flex-col bg-neutral-900 text-white;
+	}
+}
+
+@layer utilities {
+	.font-lora {
+		font-family: "Lora", serif;
+	}
+
+	.font-inter {
+		font-family: "Inter", sans-serif;
+	}
+
+	.animated-underline {
+		@apply relative;
+
+		&:hover::after {
+			@apply translate-y-0 opacity-100;
+		}
+
+		&::after {
+			@apply pointer-events-none absolute bottom-0 left-0 right-0 h-[0.1em] w-full translate-y-[0.125rem] opacity-0 transition;
+
+			content: "";
+		}
+	}
+}
