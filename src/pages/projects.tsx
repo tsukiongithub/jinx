@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import { type NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
+import type { MouseEvent } from "react";
 import { useQuery } from "react-query";
 
 type Project = {
@@ -41,13 +42,12 @@ const projects: NextPage = () => {
 const ProjectGrid = () => {
 	const projectsList: Project[] = [];
 	const { data, isLoading, isError, isSuccess } = useQuery("githubData", fetchProjects);
-
 	if (isLoading) {
 		return <div>loading projects...</div>;
 	}
 
 	if (isError) {
-		return <div>there was an error, please try again later</div>;
+		return <div>there was an error loading the projects, please try again later :/</div>;
 	}
 
 	if (isSuccess) {
@@ -56,29 +56,47 @@ const ProjectGrid = () => {
 				name: data[i].name,
 				description: data[i].description != undefined ? data[i].description : "no description found",
 				repoUrl: data[i].html_url,
-				repoUrlText: `link to the ${data[i].name} project`,
+				repoUrlText: `${data[i].name} on github`,
 			});
 		}
 	}
 
+	const handleOnMouseMove = (ev: MouseEvent<HTMLElement>) => {
+		const projectCards = ev.currentTarget.children;
+		for (let i = 0; i < projectCards.length; i++) {
+			const projectCard = projectCards[i] as HTMLElement;
+			const rect = projectCard.getBoundingClientRect();
+			const x = ev.clientX - rect.left;
+			const y = ev.clientY - rect.top;
+			projectCard.style.setProperty("--mouse-x", `${x}px`);
+			projectCard.style.setProperty("--mouse-y", `${y}px`);
+		}
+	};
+
 	return (
-		<div className="grid auto-cols-fr grid-flow-col gap-4">
+		<div
+			className="projects-grid"
+			onMouseMove={handleOnMouseMove}
+		>
 			{projectsList.map((project, key) => {
 				return (
-					<div
+					<article
 						key={key}
-						className="rounded bg-neutral-800/60 py-6 px-4 shadow-lg transition hover:scale-105 hover:shadow-xl"
+						id={`${key}`}
+						className="project-card"
 					>
-						<h4 className="mb-4 text-xl font-medium">{project.name}</h4>
-						<p className="mb-4">{project.description}</p>
-						<Link
-							className="underline"
-							href={project.repoUrl}
-							target="_blank"
-						>
-							{project.repoUrlText}
-						</Link>
-					</div>
+						<div className="project-card__content">
+							<h4 className="mb-4 text-xl font-medium">{project.name}</h4>
+							<p className="mb-4">{project.description}</p>
+							<Link
+								className="mt-auto underline underline-offset-2"
+								href={project.repoUrl}
+								target="_blank"
+							>
+								{project.repoUrlText}
+							</Link>
+						</div>
+					</article>
 				);
 			})}
 		</div>

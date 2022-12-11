@@ -6,6 +6,7 @@ const Footer = ({ className }: { className?: string }) => {
 			<p>
 				Copyright © 2022 by{" "}
 				<Link
+					className="animated-underline after:bg-white"
 					href={"https://www.twitter.com/scfd_tsuki"}
 					target={"_blank"}
 				>

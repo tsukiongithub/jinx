@@ -3,7 +3,6 @@ import Header from "@/components/Header";
 import { type NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
 
 const Home: NextPage = () => {
 	return (
@@ -20,14 +19,7 @@ const Home: NextPage = () => {
 				<h2 className="-mt-14 text-center text-6xl [line-height:5rem;]">
 					hi.
 					<br />
-					i&apos;m{" "}
-					<Link
-						href="https://www.twitter.com/scfd_tsuki"
-						target={"_blank"}
-					>
-						tsuki
-					</Link>{" "}
-					:)
+					i&apos;m tsuki :)
 				</h2>
 			</main>
 			<Footer className="z-10 bg-transparent" />
