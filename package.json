@@ -9,6 +9,10 @@
     "start": "next start"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.3.0",
+    "@fortawesome/free-brands-svg-icons": "^6.3.0",
+    "@fortawesome/free-regular-svg-icons": "^6.3.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "next": "13.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -26,6 +30,7 @@
     "autoprefixer": "^10.4.7",
     "eslint": "^8.26.0",
     "eslint-config-next": "13.0.2",
+    "json5": "^2.2.3",
     "postcss": "^8.4.14",
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.13",
