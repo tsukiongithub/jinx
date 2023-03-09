@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = ({ className }: { className?: string }) => {
 	return (
-		<footer className={`${className} mt-auto flex flex-col items-center bg-neutral-900/60 px-6 py-6`}>
+		<footer className={`${className ? className : ""} mt-auto flex flex-col items-center px-6 py-6`}>
 			<p>
 				Copyright © 2022 by{" "}
 				<Link
