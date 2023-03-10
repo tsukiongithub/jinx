@@ -1,4 +1,4 @@
-import { MouseEvent, useEffect, useState } from "react";
+import { type MouseEvent, useEffect, useState } from "react";
 
 import { useQuery } from "react-query";
 
@@ -22,7 +22,6 @@ const fetchProjects = async () => {
 
 const ProjectGrid = ({ variant, sortedBy }: { variant: "current" | "all"; sortedBy?: "lastActive" | "alphabetic" }) => {
 	const [allRepos, setAllRepos] = useState<Project[]>([]);
-	const [state, setState] = useState("");
 
 	const { data, isLoading, isError, isSuccess } = useQuery("githubData", fetchProjects);
 
@@ -51,7 +50,7 @@ const ProjectGrid = ({ variant, sortedBy }: { variant: "current" | "all"; sorted
 
 			setAllRepos(newRepos);
 		}
-	}, [isSuccess]);
+	}, [data, isSuccess, variant, sortedBy]);
 
 	const handleOnMouseMove = (ev: MouseEvent<HTMLElement>) => {
 		// responsible for the cool mouse hover effect
