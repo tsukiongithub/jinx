@@ -33,8 +33,8 @@ const Home: NextPage = () => {
 				</section>
 				<section className="w-full pt-20">
 					<h2 className="text-3xl">about me</h2>
-					<div className="mt-6">
-						<p className="mb-2">my approach to developing is very iterative. i believe my best work happens when i can get comfortable, listen to my music and churn out line after line of code.</p>
+					<div className="mt-6 max-w-2xl">
+						<p className="mb-4">my approach to developing is very iterative. i believe my best work happens when i can get comfortable, listen to my music and churn out line after line of code.</p>
 						<p>i feed well off feedback (no pun intended), and prefer work environments where i can ask questions freely, be it about design decisions, rendering logic or possible features.</p>
 					</div>
 				</section>
