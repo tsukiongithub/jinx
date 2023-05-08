@@ -20,7 +20,7 @@ const Header = ({ className }: { className?: string }) => {
 	}, []);
 
 	return (
-		<header className={`${className && className} fixed inset-x-0 top-0 flex items-center bg-transparent px-6 py-4 transition duration-300 ${scrollPosition > 80 && scrollPosition <= 300 ? "bg-neutral-900 bg-opacity-80" : scrollPosition > 300 ? "bg-neutral-800 shadow-2xl" : ""}`}>
+		<header className={`${className && className} fixed inset-x-0 top-0 flex items-center px-6 py-4 transition duration-300 ${scrollPosition < 80 ? "bg-transparent" : scrollPosition <= 300 ? "bg-neutral-900 bg-opacity-80" : scrollPosition > 300 ? "bg-neutral-800 shadow-2xl" : ""}`}>
 			<div className="z-20 mr-auto">
 				<Link
 					href={"/"}

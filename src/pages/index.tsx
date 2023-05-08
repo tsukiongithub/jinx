@@ -3,6 +3,10 @@ import Header from "@/components/Header";
 import { type NextPage } from "next";
 import Head from "next/head";
 import ProjectGrid from "@/components/ProjectGrid";
+import ProficienciesGrid from "@/components/ProficienciesGrid";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 const Home: NextPage = () => {
 	return (
@@ -39,7 +43,50 @@ const Home: NextPage = () => {
 					</div>
 				</section>
 				<section className="w-full pt-20">
-					<h2 className="text-3xl">currrent projects</h2>
+					<h2 className="text-3xl">proficiencies</h2>
+					<div className="mt-6">
+						<ul>
+							<li>
+								<h3 className="text-xl">
+									<Link
+										className="group relative underline underline-offset-2 transition-colors duration-100 hover:text-red-600"
+										href={"https://react.dev/"}
+										target="_blank"
+									>
+										<span>react</span>
+										<FontAwesomeIcon
+											className="pointer-events-none absolute top-0 -right-5 h-3 w-3 bg-neutral-900 p-0.5 opacity-0 transition-opacity duration-100 group-hover:opacity-100"
+											icon={faArrowUpRightFromSquare}
+										/>
+									</Link>
+								</h3>
+								<p className="mt-2 max-w-xl">i have 2 years of experience using react for my various frontend needs, and i&apos;m still learning something new, every time i spin up a new project.</p>
+							</li>
+							<li className="mt-6">
+								<h3 className="text-xl">
+									<Link
+										className="group relative underline underline-offset-2 transition-colors duration-100 hover:text-red-600"
+										href={"https://tailwindcss.com/"}
+										target="_blank"
+									>
+										<span>tailwind css</span>
+										<FontAwesomeIcon
+											className="pointer-events-none absolute top-0 -right-5 h-3 w-3 bg-neutral-900 p-0.5 opacity-0 transition-opacity duration-100 group-hover:opacity-100"
+											icon={faArrowUpRightFromSquare}
+										/>
+									</Link>
+								</h3>
+								<p className="mt-2 max-w-xl">i&apos;ve only been using tailwind for about a year, but in that short timespan, i have grown to love it immensely.</p>
+							</li>
+						</ul>
+					</div>
+					{/* <ProficienciesGrid
+						variant="short"
+						type="tech"
+					/> */}
+				</section>
+				<section className="w-full pt-20">
+					<h2 className="text-3xl">current projects</h2>
 					<p className="mt-6">projects i have worked on in the last month.</p>
 					<div className="mt-8">
 						<ProjectGrid

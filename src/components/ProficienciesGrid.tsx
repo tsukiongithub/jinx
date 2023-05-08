@@ -6,14 +6,14 @@ const techProficiencies = [
 	{
 		id: 1,
 		title: "html, css & js",
-		description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cupiditate quam repellendus voluptatibus atque nostrum ratione molestias obcaecati enim, repellat impedit minus blanditiis temporibus?",
-		shortDescription: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus culpa pariatur reprehenderit?",
+		description: "i have been teaching myself react for 2 years, and i've been loving evert second of it.",
+		shortDescription: "i have been teaching myself react for 2 years, and i've been loving evert second of it.",
 	},
 	{
 		id: 2,
 		title: "react",
-		description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cupiditate quam repellendus voluptatibus atque nostrum ratione molestias obcaecati enim, repellat impedit minus blanditiis temporibus?",
-		shortDescription: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus culpa pariatur reprehenderit?",
+		description: "i have been teaching myself react for 2 years, and i've been loving evert second of it.",
+		shortDescription: "i have been teaching myself react for 2 years, and i've been loving evert second of it.",
 	},
 	{
 		id: 3,

@@ -5,6 +5,8 @@ import { useQuery } from "react-query";
 import Link from "next/link";
 import addMonths from "@/common/addMonths";
 import handleCardHover from "@/common/handleCardHover";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 type Project = {
 	name: string;
@@ -77,11 +79,15 @@ const ProjectGrid = ({ variant, sortedBy }: { variant: "current" | "all"; sorted
 							<h4 className="mb-4 text-xl font-medium">{project.name}</h4>
 							<p className="mb-4 overflow-hidden overflow-ellipsis">{project.description}</p>
 							<Link
-								className="mt-auto w-fit underline underline-offset-2 transition-colors duration-100 hover:text-red-500"
+								className="group relative mt-auto w-fit underline underline-offset-2 transition-colors duration-100 hover:text-red-600"
 								href={project.repoUrl}
 								target="_blank"
 							>
-								{project.repoUrlText}
+								<span>{project.repoUrlText}</span>
+								<FontAwesomeIcon
+									className="pointer-events-none absolute top-0 -right-5 h-3 w-3 bg-neutral-900 p-0.5 opacity-0 transition-opacity duration-100 group-hover:opacity-100"
+									icon={faArrowUpRightFromSquare}
+								/>
 							</Link>
 						</div>
 					</article>
