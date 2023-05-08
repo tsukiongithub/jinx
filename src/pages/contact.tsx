@@ -22,6 +22,7 @@ const contact: NextPage = () => {
 					<div className="text-center text-xl">
 						<p>if you want me for a project, then</p>
 						<p>shoot me a message on any of these platforms.</p>
+						<p className="mt-2">(twitter is prefered)</p>
 					</div>
 					<div className="mt-12 grid auto-cols-fr grid-cols-2 gap-16">
 						<div className="mx-auto flex items-center">

@@ -4,11 +4,11 @@
 
 @layer base {
 	::selection {
-		@apply bg-red-900 bg-opacity-60 text-white;
+		@apply bg-cyan-500 bg-opacity-70 text-white;
 	}
 
 	#__next {
-		@apply font-lora flex min-h-screen flex-col bg-neutral-900 text-white;
+		@apply flex min-h-screen flex-col bg-neutral-900 font-lora text-white;
 	}
 }
 
@@ -47,14 +47,6 @@
 }
 
 @layer utilities {
-	.font-lora {
-		font-family: "Lora", serif;
-	}
-
-	.font-inter {
-		font-family: "Inter", sans-serif;
-	}
-
 	.animated-underline {
 		@apply relative;
 

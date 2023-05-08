@@ -1,5 +1,8 @@
+general:
+  ☐ add an "about me"/"why you need me" section/page
+  ☐ add a portfolio
+
 pages:
     home:
-        ☐ @? put a "my journey" section
-        ☐ @? add a "current projects" section
+        ✔ add a "current projects" section @done(23-03-10 15:56)
         ☐ add a "proficiencies" section
