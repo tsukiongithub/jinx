@@ -42,7 +42,7 @@ const Navigation = () => {
 
 	return (
 		<>
-			{windowExists && windowWidth! > 767 ? (
+			{windowExists && windowWidth && windowWidth > 767 ? (
 				<nav className={`ml-auto flex items-center`}>
 					{routes.map((route) => {
 						return (

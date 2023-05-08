@@ -4,7 +4,6 @@ import Link from "next/link";
 import Navigation from "./Navigation";
 
 const Header = ({ className }: { className?: string }) => {
-	const [headerHasBg, setHeaderHasBg] = useState(false);
 	const [scrollPosition, setScrollPosition] = useState(0);
 
 	const handleScroll = () => {

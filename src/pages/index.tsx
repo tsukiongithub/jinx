@@ -21,7 +21,7 @@ const Home: NextPage = () => {
 						<h1 className="relative z-20 text-6xl [line-height:5rem;]">
 							hiya :&#41;
 							<br />
-							i'm tsuki
+							i&apos;m tsuki
 						</h1>
 						<div className="absolute inset-0 z-10 bg-black blur-2xl" />
 						<div className="absolute inset-0 z-10 bg-red-900 blur-3xl" />
