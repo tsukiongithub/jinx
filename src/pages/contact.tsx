@@ -16,34 +16,40 @@ const contact: NextPage = () => {
 					content="contact page for tsuki's website"
 				/>
 			</Head>
-			<Header />
-			<main className="container mx-auto flex flex-col items-center p-4 pt-24">
-				<div className="mt-8 grid h-[calc(100vh-16rem)] min-h-[8rem] auto-cols-fr grid-cols-2 gap-16">
-					<div className="mx-auto flex items-center">
-						<Link
-							className="flex h-full max-h-48 flex-col items-center justify-center p-4 transition-colors duration-100 hover:text-red-500"
-							href={"https://twitter.com/scfd_tsuki"}
-							target={"_blank"}
-						>
-							<FontAwesomeIcon
-								className="h-full max-h-24 min-h-[2rem]"
-								icon={faTwitter}
-							/>
-							<div className="mt-4 text-2xl">twitter</div>
-						</Link>
+			<Header className="z-20" />
+			<main className="container z-10 mx-auto flex flex-col items-center p-4 pt-24">
+				<div className="h-[calc(100vh-16rem)] min-h-[8rem]">
+					<div className="text-center text-xl">
+						<p>if you want me for a project, then</p>
+						<p>shoot me a message on any of these platforms.</p>
 					</div>
-					<div className="mx-auto flex items-center">
-						<Link
-							className="flex h-full max-h-48 flex-col items-center justify-center p-4 transition-colors duration-100 hover:text-red-500"
-							href={"https://instagram.com/tsukioninsta/"}
-							target={"_blank"}
-						>
-							<FontAwesomeIcon
-								className="h-full max-h-24 min-h-[2rem]"
-								icon={faInstagram}
-							/>
-							<div className="mt-4 text-2xl">instagram</div>
-						</Link>
+					<div className="mt-12 grid auto-cols-fr grid-cols-2 gap-16">
+						<div className="mx-auto flex items-center">
+							<Link
+								className="flex h-full max-h-48 flex-col items-center justify-center p-4 transition-colors duration-100 hover:text-red-500"
+								href={"https://twitter.com/tsukiisadev"}
+								target={"_blank"}
+							>
+								<FontAwesomeIcon
+									className="h-full max-h-24 min-h-[2rem]"
+									icon={faTwitter}
+								/>
+								<div className="mt-4 text-2xl">twitter</div>
+							</Link>
+						</div>
+						<div className="mx-auto flex items-center">
+							<Link
+								className="flex h-full max-h-48 flex-col items-center justify-center p-4 transition-colors duration-100 hover:text-red-500"
+								href={"https://instagram.com/tsukioninsta/"}
+								target={"_blank"}
+							>
+								<FontAwesomeIcon
+									className="h-full max-h-24 min-h-[2rem]"
+									icon={faInstagram}
+								/>
+								<div className="mt-4 text-2xl">instagram</div>
+							</Link>
+						</div>
 					</div>
 				</div>
 			</main>

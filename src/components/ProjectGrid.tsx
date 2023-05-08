@@ -4,6 +4,7 @@ import { useQuery } from "react-query";
 
 import Link from "next/link";
 import addMonths from "@/common/addMonths";
+import handleCardHover from "@/common/handleCardHover";
 
 type Project = {
 	name: string;
@@ -52,19 +53,6 @@ const ProjectGrid = ({ variant, sortedBy }: { variant: "current" | "all"; sorted
 		}
 	}, [data, isSuccess, variant, sortedBy]);
 
-	const handleOnMouseMove = (ev: MouseEvent<HTMLElement>) => {
-		// responsible for the cool mouse hover effect
-		const projectCards = ev.currentTarget.children;
-		for (let i = 0; i < projectCards.length; i++) {
-			const projectCard = projectCards[i] as HTMLElement;
-			const rect = projectCard.getBoundingClientRect();
-			const x = ev.clientX - rect.left;
-			const y = ev.clientY - rect.top;
-			projectCard.style.setProperty("--mouse-x", `${x}px`);
-			projectCard.style.setProperty("--mouse-y", `${y}px`);
-		}
-	};
-
 	if (isLoading) {
 		return <div>loading projects...</div>;
 	}
@@ -75,19 +63,19 @@ const ProjectGrid = ({ variant, sortedBy }: { variant: "current" | "all"; sorted
 
 	return (
 		<div
-			className="projects-grid"
-			onMouseMove={handleOnMouseMove}
+			className="card-grid"
+			onMouseMove={handleCardHover}
 		>
 			{allRepos.map((project, key) => {
 				return (
 					<article
 						key={key}
 						id={`${key}`}
-						className="project-card"
+						className="card"
 					>
-						<div className="project-card__content">
+						<div className="card__content">
 							<h4 className="mb-4 text-xl font-medium">{project.name}</h4>
-							<p className="mb-4">{project.description}</p>
+							<p className="mb-4 overflow-hidden overflow-ellipsis">{project.description}</p>
 							<Link
 								className="mt-auto w-fit underline underline-offset-2 transition-colors duration-100 hover:text-red-500"
 								href={project.repoUrl}

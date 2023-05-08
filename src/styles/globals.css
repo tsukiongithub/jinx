@@ -13,14 +13,14 @@
 }
 
 @layer components {
-	.projects-grid {
+	.card-grid {
 		@apply grid w-full auto-rows-fr gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
 
-		&:hover .project-card::after {
+		&:hover .card::after {
 			@apply opacity-100;
 		}
 
-		& .project-card {
+		& .card {
 			@apply relative h-60 rounded bg-neutral-600/10 shadow-lg transition;
 
 			&:hover::before {

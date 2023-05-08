@@ -14,8 +14,8 @@ const projects: NextPage = () => {
 					content="projects page for tsuki's website"
 				/>
 			</Head>
-			<Header />
-			<main className="container mx-auto flex flex-col items-center p-4 pt-28">
+			<Header className="z-20" />
+			<main className="container z-10 mx-auto flex flex-col items-center p-4 pt-28">
 				<h2 className="text-3xl">projects</h2>
 				<p className="my-6">these are all my public projects on github</p>
 				<ProjectGrid variant="all" />
