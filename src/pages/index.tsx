@@ -5,6 +5,7 @@ import Head from "next/head";
 import ProjectGrid from "@/components/ProjectGrid";
 import ProficienciesGrid from "@/components/ProficienciesGrid";
 import Link from "next/link";
+import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
@@ -31,8 +32,15 @@ const Home: NextPage = () => {
 						<div className="absolute inset-0 z-10 bg-red-900 blur-3xl" />
 					</div>
 					<div>
-						<div className="absolute inset-x-0 bottom-0 -z-[9] h-[40vh] bg-gradient-to-b from-transparent to-neutral-900" />
-						<div className="absolute inset-0 -z-10 bg-[url('/imgs/why-did-you-leave-me-2.png')] bg-cover bg-no-repeat" />
+						<div className="absolute inset-x-0 bottom-0 z-[1] h-[40vh] bg-gradient-to-b from-transparent to-neutral-900" />
+						<Image
+							className="object-cover"
+							src={"/imgs/why-did-you-leave-me-2.png"}
+							alt={"bg"}
+							fill
+							placeholder="blur"
+							blurDataURL={"/imgs/why-did-you-leave-me-2-small.png"}
+						/>
 					</div>
 				</section>
 				<section className="w-full pt-20">
@@ -55,7 +63,7 @@ const Home: NextPage = () => {
 									>
 										<span>react</span>
 										<FontAwesomeIcon
-											className="pointer-events-none absolute top-0 -right-5 h-3 w-3 bg-neutral-900 p-0.5 opacity-0 transition-opacity duration-100 group-hover:opacity-100"
+											className="pointer-events-none absolute -right-5 top-0 h-3 w-3 bg-neutral-900 p-0.5 opacity-0 transition-opacity duration-100 group-hover:opacity-100"
 											icon={faArrowUpRightFromSquare}
 										/>
 									</Link>
@@ -71,7 +79,7 @@ const Home: NextPage = () => {
 									>
 										<span>tailwind css</span>
 										<FontAwesomeIcon
-											className="pointer-events-none absolute top-0 -right-5 h-3 w-3 bg-neutral-900 p-0.5 opacity-0 transition-opacity duration-100 group-hover:opacity-100"
+											className="pointer-events-none absolute -right-5 top-0 h-3 w-3 bg-neutral-900 p-0.5 opacity-0 transition-opacity duration-100 group-hover:opacity-100"
 											icon={faArrowUpRightFromSquare}
 										/>
 									</Link>
