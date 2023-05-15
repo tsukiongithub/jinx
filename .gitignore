@@ -22,6 +22,7 @@
 # misc
 .DS_Store
 *.pem
+about-me-stuff.txt
 
 # debug
 npm-debug.log*

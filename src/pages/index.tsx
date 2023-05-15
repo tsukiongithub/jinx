@@ -1,13 +1,15 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import { type NextPage } from "next";
+
 import Head from "next/head";
-import ProjectGrid from "@/components/ProjectGrid";
-import ProficienciesGrid from "@/components/ProficienciesGrid";
 import Link from "next/link";
 import Image from "next/image";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import ProjectGrid from "@/components/ProjectGrid";
 
 const Home: NextPage = () => {
 	return (
@@ -31,7 +33,7 @@ const Home: NextPage = () => {
 						<div className="absolute inset-0 z-10 bg-black blur-2xl" />
 						<div className="absolute inset-0 z-10 bg-red-900 blur-3xl" />
 					</div>
-					<div>
+					<div className="pointer-events-none">
 						<div className="absolute inset-x-0 bottom-0 z-[1] h-[40vh] bg-gradient-to-b from-transparent to-neutral-900" />
 						<Image
 							className="object-cover"
@@ -43,13 +45,13 @@ const Home: NextPage = () => {
 						/>
 					</div>
 				</section>
-				<section className="w-full pt-20">
+				{/* <section className="w-full pt-20">
 					<h2 className="text-3xl">about me</h2>
 					<div className="mt-6 max-w-2xl">
 						<p className="mb-4">my approach to developing is very iterative. i believe my best work happens when i can get comfortable, listen to my music and churn out line after line of code.</p>
 						<p>i feed well off feedback (no pun intended), and prefer work environments where i can ask questions freely, be it about design decisions, rendering logic or possible features.</p>
 					</div>
-				</section>
+				</section> */}
 				<section className="w-full pt-20">
 					<h2 className="text-3xl">proficiencies</h2>
 					<div className="mt-6">
@@ -88,10 +90,6 @@ const Home: NextPage = () => {
 							</li>
 						</ul>
 					</div>
-					{/* <ProficienciesGrid
-						variant="short"
-						type="tech"
-					/> */}
 				</section>
 				<section className="w-full pt-20">
 					<h2 className="text-3xl">current projects</h2>

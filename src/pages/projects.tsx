@@ -18,7 +18,10 @@ const projects: NextPage = () => {
 			<main className="container z-10 mx-auto flex flex-col items-center p-4 pt-28">
 				<h2 className="text-3xl">projects</h2>
 				<p className="my-6">these are all my public projects on github</p>
-				<ProjectGrid variant="all" />
+				<ProjectGrid
+					variant="all"
+					sortedBy="lastActive"
+				/>
 			</main>
 			<Footer />
 		</>

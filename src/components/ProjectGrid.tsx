@@ -48,7 +48,7 @@ const ProjectGrid = ({ variant, sortedBy }: { variant: "current" | "all"; sorted
 			}
 
 			if (sortedBy === "lastActive") {
-				newRepos.sort((a, b) => a.pushedAt.getDate() - b.pushedAt.getDate());
+				newRepos.sort((a, b) => b.pushedAt.getTime() - a.pushedAt.getTime());
 			}
 
 			setAllRepos(newRepos);
@@ -85,7 +85,7 @@ const ProjectGrid = ({ variant, sortedBy }: { variant: "current" | "all"; sorted
 							>
 								<span>{project.repoUrlText}</span>
 								<FontAwesomeIcon
-									className="pointer-events-none absolute top-0 -right-5 h-3 w-3 bg-neutral-900 p-0.5 opacity-0 transition-opacity duration-100 group-hover:opacity-100"
+									className="pointer-events-none absolute -right-5 top-0 h-3 w-3 bg-neutral-900 p-0.5 opacity-0 transition-opacity duration-100 group-hover:opacity-100"
 									icon={faArrowUpRightFromSquare}
 								/>
 							</Link>
