@@ -42,7 +42,7 @@ const Footer = ({ className }: { className?: string }) => {
 				Copyright © 2023 by{" "}
 				<Link
 					className="animated-underline after:bg-white"
-					href="https://www.twitter.com/scfd_tsuki"
+					href="https://twitter.com/tsukiisadev"
 					target="_blank"
 				>
 					tsuki
