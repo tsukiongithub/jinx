@@ -21,7 +21,7 @@ const Home: NextPage = () => {
 					content="home page for tsuki's website"
 				/>
 			</Head>
-			<Header className="z-20" />
+			<Header className="z-20 shadow-2xl" />
 			<main className="container z-10 mx-auto flex flex-1 flex-col items-center justify-center px-4">
 				<section className="flex h-screen items-center text-center">
 					<div className="relative">
@@ -45,7 +45,7 @@ const Home: NextPage = () => {
 						/>
 					</div>
 				</section>
-				{/* <section className="pt-20 text-center">
+				<section className="pt-20 text-center">
 					<h2 className="text-4xl">about me</h2>
 					<div className="mt-8 max-w-2xl">
 						<p className="mb-4">
@@ -57,8 +57,8 @@ const Home: NextPage = () => {
 
 						<p>For now i'm only looking to take on small to medium-ish projects. If you would like to discuss pricing, or just have questions, then feel free to contact me on any of the platforms listed on my "contact" page.</p>
 					</div>
-				</section> */}
-				<section className="w-full pt-20">
+				</section>
+				<section className="pt-20 text-center">
 					<h2 className="text-3xl">proficiencies</h2>
 					<div className="mt-6">
 						<ul>
@@ -98,8 +98,8 @@ const Home: NextPage = () => {
 					</div>
 				</section>
 				<section className="w-full pt-20">
-					<h2 className="text-3xl">current projects</h2>
-					<p className="mt-6">projects i have worked on in the last month.</p>
+					<h2 className="text-center text-3xl">current projects</h2>
+					<p className="mt-6 text-center">projects i have worked on in the last month.</p>
 					<div className="mt-8">
 						<ProjectGrid
 							variant="current"
