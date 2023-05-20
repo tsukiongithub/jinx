@@ -49,13 +49,13 @@ const Home: NextPage = () => {
 					<h2 className="text-4xl">about me</h2>
 					<div className="mt-8 max-w-2xl">
 						<p className="mb-4">
-							Hiya! i'm tsuki! I am currently employed at Supporters A/S, where i do frontend development for internal and external tools. These tools include, a microsoft teams app with an ai chatbot using openai's davinci model, and a highly customized input prompt, (react + vite), a webapp where customers can record their screen and upload files, with a sister app for the it-supporters to view these files and screen recordings, (both done in vue). For obvious reasons i can't share any source code from these projects, but you can take a look over at my github to see my other
-							work.
+							Hiya! i&qout;m tsuki! I am currently employed at Supporters A/S, where i do frontend development for internal and external tools. These tools include, a microsoft teams app with an ai chatbot using openai&qout;s davinci model, and a highly customized input prompt, (react + vite), a webapp where customers can record their screen and upload files, with a sister app for the it-supporters to view these files and screen recordings, (both done in vue). For obvious reasons i can&qout;t share any source code from these projects, but you can take a look over at my github to
+							see my other work.
 						</p>
 
-						<p className="mb-4">I have around 2 years experience developing in react and tailwind, and over 4 years working with html, css and javascript. And although i am most comfortable in the react side of things, i love learning and experimenting with new tech surrounding the webdev world. So if you have a cool piece of tech you'd like me to use for your project, i'm all ears.</p>
+						<p className="mb-4">I have around 2 years experience developing in react and tailwind, and over 4 years working with html, css and javascript. And although i am most comfortable in the react side of things, i love learning and experimenting with new tech surrounding the webdev world. So if you have a cool piece of tech you&qout;d like me to use for your project, i&qout;m all ears.</p>
 
-						<p>For now i'm only looking to take on small to medium-ish projects. If you would like to discuss pricing, or just have questions, then feel free to contact me on any of the platforms listed on my "contact" page.</p>
+						<p>For now i&qout;m only looking to take on small to medium-ish projects. If you would like to discuss pricing, or just have questions, then feel free to contact me on any of the platforms listed on my contact page.</p>
 					</div>
 				</section>
 				<section className="pt-20 text-center">
