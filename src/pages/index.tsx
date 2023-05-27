@@ -45,20 +45,18 @@ const Home: NextPage = () => {
 						/>
 					</div>
 				</section>
-				<section className="pt-20 text-center">
+				<section className="my-32 text-center">
 					<h2 className="text-4xl">about me</h2>
 					<div className="mt-8 max-w-2xl">
 						<p className="mb-4">
-							Hiya! i&qout;m tsuki! I am currently employed at Supporters A/S, where i do frontend development for internal and external tools. These tools include, a microsoft teams app with an ai chatbot using openai&qout;s davinci model, and a highly customized input prompt, (react + vite), a webapp where customers can record their screen and upload files, with a sister app for the it-supporters to view these files and screen recordings, (both done in vue). For obvious reasons i can&qout;t share any source code from these projects, but you can take a look over at my github to
+							Hiya! i&apos;m tsuki! I am currently employed at Supporters A/S, where i do frontend development for internal and external tools. These tools include, a microsoft teams app with an ai chatbot using openai&apos;s davinci model, and a highly customized input prompt, (react + vite), a webapp where customers can record their screen and upload files, with a sister app for the it-supporters to view these files and screen recordings, (both done in vue). For obvious reasons i can&apos;t share any source code from these projects, but you can take a look over at my github to
 							see my other work.
 						</p>
-
-						<p className="mb-4">I have around 2 years experience developing in react and tailwind, and over 4 years working with html, css and javascript. And although i am most comfortable in the react side of things, i love learning and experimenting with new tech surrounding the webdev world. So if you have a cool piece of tech you&qout;d like me to use for your project, i&qout;m all ears.</p>
-
-						<p>For now i&qout;m only looking to take on small to medium-ish projects. If you would like to discuss pricing, or just have questions, then feel free to contact me on any of the platforms listed on my contact page.</p>
+						<p className="mb-4">I have around 2 years experience developing in react and tailwind, and over 4 years working with html, css and javascript. And although i am most comfortable in the react side of things, i love learning and experimenting with new tech surrounding the webdev world. So if you have a cool piece of tech you&apos;d like me to use for your project, i&apos;m all ears.</p>
+						<p>For now i&apos;m only looking to take on small to medium-ish projects. If you would like to discuss pricing, or just have questions, then feel free to contact me on any of the platforms listed on my contact page.</p>
 					</div>
 				</section>
-				<section className="pt-20 text-center">
+				<section className="my-40 text-center">
 					<h2 className="text-3xl">proficiencies</h2>
 					<div className="mt-6">
 						<ul>
@@ -97,7 +95,7 @@ const Home: NextPage = () => {
 						</ul>
 					</div>
 				</section>
-				<section className="w-full pt-20">
+				<section className="my-40 w-full">
 					<h2 className="text-center text-3xl">current projects</h2>
 					<p className="mt-6 text-center">projects i have worked on in the last month.</p>
 					<div className="mt-8">
