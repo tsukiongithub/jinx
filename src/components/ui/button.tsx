@@ -12,7 +12,7 @@ const buttonVariants = cva("inline-flex items-center justify-center whitespace-n
 			outline: "border border-neutral-800 bg-neutral-950 hover:bg-neutral-800 hover:text-neutral-50",
 			secondary: "bg-neutral-800 text-neutral-50 hover:bg-neutral-800/80",
 			ghost: "hover:bg-neutral-800 hover:text-neutral-50",
-			link: "underline-offset-4 hover:underline text-neutral-50",
+			link: "underline-offset-4 underline md:no-underline md:hover:underline text-neutral-50",
 		},
 		size: {
 			default: "h-10 px-4 py-2",
