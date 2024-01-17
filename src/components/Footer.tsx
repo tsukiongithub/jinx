@@ -39,7 +39,7 @@ const Footer = ({ className }: { className?: string }) => {
 				</Link>
 			</div>
 			<p>
-				Copyright © 2023 by{" "}
+				Copyright © 2024 by{" "}
 				<Link
 					className="animated-underline after:bg-white"
 					href="https://twitter.com/tsukiisadev"
