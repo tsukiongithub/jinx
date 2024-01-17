@@ -4,12 +4,26 @@ import { QueryClient, QueryClientProvider } from "react-query";
 
 import "../styles/globals.css";
 
+import { Inter, Lora } from "next/font/google";
+
+const inter = Inter({
+	subsets: ["latin"],
+	variable: "--font-sans",
+});
+
+const lora = Lora({
+	subsets: ["latin"],
+	variable: "--font-serif",
+});
+
 const MyApp: AppType = ({ Component, pageProps }) => {
 	const [queryClient] = useState(() => new QueryClient());
 
 	return (
 		<QueryClientProvider client={queryClient}>
-			<Component {...pageProps} />
+			<div className={`${lora.variable} ${inter.variable} flex min-h-screen flex-col bg-neutral-900 font-sans text-white`}>
+				<Component {...pageProps} />
+			</div>
 		</QueryClientProvider>
 	);
 };
