@@ -34,7 +34,7 @@ const ProjectGrid = ({ variant, sortedBy }: { variant: "current" | "all"; sorted
 						continue;
 					}
 
-					newRepos.push({
+					const project = {
 						id: currentRepo.id.toString(),
 						name: currentRepo.name,
 						description: currentRepo.description != undefined ? currentRepo.description : "no description found",
@@ -42,7 +42,9 @@ const ProjectGrid = ({ variant, sortedBy }: { variant: "current" | "all"; sorted
 						repoUrlText: `${currentRepo.name} on github`,
 						createdAt: new Date(currentRepo.created_at),
 						pushedAt: new Date(currentRepo.pushed_at),
-					} satisfies Project);
+					} satisfies Project;
+
+					newRepos.push(project);
 				}
 			}
 
