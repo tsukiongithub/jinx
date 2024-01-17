@@ -8,10 +8,6 @@ const Document = () => {
 					rel="icon"
 					href="/favicon.ico"
 				/>
-				<meta
-					name="theme-color"
-					content="#171717"
-				/>
 			</Head>
 			<body>
 				<Main />

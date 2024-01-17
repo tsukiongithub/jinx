@@ -15,6 +15,10 @@
 		@apply rounded bg-red-800 hover:bg-red-900;
 	}
 
+	body {
+		@apply bg-neutral-950;
+	}
+
 	h1,
 	h2,
 	h3,
