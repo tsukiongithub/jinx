@@ -26,6 +26,7 @@ const Header = ({ className }: { className?: string }) => {
 
 	return (
 		<header className={cn(`fixed inset-x-0 top-0 flex items-center px-6 py-4 transition duration-200`, navIsOpen ? "bg-neutral-950" : scrollPosition < 80 ? "bg-transparent" : "bg-neutral-950", className)}>
+			<div className="absolute inset-x-0 top-0 z-10 h-24 bg-neutral-950 mask-image-b" />
 			<div className="z-20 mr-auto">
 				<Link
 					className="font-serif text-3xl md:text-5xl"

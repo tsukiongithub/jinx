@@ -54,7 +54,6 @@ const Home: NextPage = () => {
 						</div>
 					</div>
 					<div className="pointer-events-none">
-						<div className="absolute inset-x-0 top-0 z-10 h-24 bg-neutral-950 mask-image-b" />
 						<Image
 							className="max-h-[100dvh] object-cover mask-image-b mask-image-start-75"
 							src={"/imgs/why-did-you-leave-me-2.png"}
