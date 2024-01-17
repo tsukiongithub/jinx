@@ -9,7 +9,6 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import ProjectGrid from "@/components/ProjectGrid";
 import { Button } from "@/components/ui/button";
 
 const Home: NextPage = () => {
@@ -73,9 +72,9 @@ const Home: NextPage = () => {
 					<div>
 						<h2 className="mb-4 text-5xl">about me</h2>
 						<p className="mb-2">hiya! my name is tsuki. nice to meet you :D</p>
-						<p className="mb-2">i'm a 21 year old developer from europe striving to create fluid user experiences</p>
+						<p className="mb-2">i&apos;m a 21 year old developer from europe striving to create fluid user experiences</p>
 						<p>
-							when i'm not building intricate <span className="italic line-through">and sexy</span> webapps, i keep my brain engaged with video games and photo editing.
+							when i&apos;m not building intricate <span className="italic line-through">and sexy</span> webapps, i keep my brain engaged with video games and photo editing.
 						</p>
 						<h3 className="mb-4 mt-8 text-4xl">skills</h3>
 						<ul className="space-y-2 pl-6">

@@ -48,7 +48,7 @@ const ProficienciesGrid = ({ variant, type }: { variant: "short" | "full"; type:
 		} else if (type === "general") {
 			setProficienciesList(generalProficiencies);
 		}
-	}, []);
+	}, [type]);
 
 	return (
 		<>

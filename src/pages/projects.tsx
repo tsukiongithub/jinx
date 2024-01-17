@@ -1,7 +1,8 @@
+import { type NextPage } from "next";
+
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 // import ProjectGrid from "@/components/ProjectGrid";
-import { type NextPage } from "next";
 import Head from "next/head";
 
 const projects: NextPage = () => {
